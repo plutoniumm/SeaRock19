@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <script src="https://unpkg.com/scrollreveal@4"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script>document.getElementsByTagName("html")[0].className += " js";</script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+         integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <title>SeaRock 2019 | Waves</title>
+      <style>
+		 
+		  	
+	
+	.fa.fa-instagram {
+		display: inline;
+		transition:-webkit-all 0.5s;
+		transition:all 0.5s;
+  color: black;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+		  	.fa.fa-facebook-square {
+		transition:-webkit-all 0.5s;
+		transition:all 0.5s;
+		display: inline;
+ 	    color: black;	
+}
+		  
+	.fa.fa-instagram:hover {
+		display: inline;
+		cursor: pointer;
+		 -webkit-transform: translate(0px,-10px); /* Safari */
+  transform: translate(0px,-10px); /* Standard syntax */
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+		  	.fa.fa-facebook-square:hover {
+				cursor: pointer;
+				-webkit-transform: translate(0px,-10px); /* Safari */
+  transform: translate(0px,-10px); 
+		display: inline;
+  color: #3b5998;	
+}
+		  
+         #rounder {border-radius: 2.5vh;
+         border: 1px solid #000000;
+         padding: 1px; 
+         width: 5vh;
+         height: 4vh;}
+         .pressme {
+         display: block;
+         float:right;
+         width: 10rem;
+         height: 2.75rem;
+         background: #cd3333;
+         padding: 0.5rem;
+         text-align: center;
+         border-radius: 0.25rem;
+         color: white;
+         font-weight: bold;
+         }
+         .pressme:hover {
+         display: block;
+         float:right;
+         width: 10rem;
+         height: 2.75rem;
+         background: #db4e4e;
+         padding: 0.5rem;
+         text-align: center;
+         border-radius: 0.25rem;
+         color: white;
+         font-weight: bold;
+         text-decoration: none;
+         }
+         .modal {
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5);
+         opacity: 0;
+         visibility: hidden;
+         transform: scale(1.1);
+         transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+         }
+         .modal-content {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: #3D3435;
+         padding: 1rem 1.5rem;
+         width: 90vw;
+         border-radius: 0.5rem;
+			 max-height: 100%;
+		 overflow-y: auto;
+         }
+         .close-button {
+         float: right;
+         width: 1.5rem;
+         line-height: 1.5rem;
+         text-align: center;
+         cursor: pointer;
+         border-radius: 0.25rem;
+         background-color: lightgray;
+         }
+         .close-button:hover {
+         background-color: darkgray;
+         }
+         .show-modal {
+         opacity: 1;
+         visibility: visible;
+         transform: scale(1.0);
+         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+         max-height: 100%;
+		 overflow-y: auto;
+		  }
+		 
+		 img {
+		 display: block;
+		 margin-left: auto;
+	     margin-right: auto;
+	     width: 100%;
+			 
+		}
+		  .text-block {
+  width: 100%;
+  font-size: 4vw;
+  background-color: black;
+  opacity: 0.75;
+  color: white;
+  position: absolute;
+  bottom: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+      </style>
+   </head>
+   <body style="font-family: 'Montserrat'">
+      <header class="cd-main-header" style="opacity:1">
+         <div class="cd-main-header__container container container--lg" id="translated">
+            <div class="cd-main-header__logo">
+               <a href="#0" style="display: inline">	
+                  <title>Go to homepage</title>
+                  <img src ="img\logo.jpg" id="rounder" alt="Searock Logo">
+               </a>
+            </div>
+            <h5><a href="#about" style="display: inline">About Us</a>&emsp;
+               <a href="#events" style="display: inline">Events</a>&emsp;
+               <a href="#reg" style="display: inline">Register</a>&emsp;
+               <a href="#contact" style="display: inline">Contact Us</a>
+            </h5>
+         </div>
+      </header>
+      <div id="">
+         <main>
+            <section class="active">
+               <section class="cd-section cd-section--bg-fixed" id="fades" style="height: 100vh">
+                  <div class="container container--lg headline">
+                     <div class="text-component text--center" id="translated">
+                        <br><br><br>
+                        <img id="logu" src="img\logowide.png" alt="Searock Logo Wide">
+                     </div>
+                     <p style="font-size:225%;text-align:center;color:#ffffff" id="translateu"><!--2<sup style="font-size: 60%">nd</sup> November, 2019-->Date: TBA Soon!</p>
+                     <br><br><br><br><br>
+                     <p style="text-align:center" id="translateu"><a href="http://www.bitswaves.org/">Waves 2019</a></p>
+                  </div>
+               </section>
+               <section class="cd-section " id="about">
+                  <div class="container container--lg headline">
+                     <div class="text-component">
+                        <p align="justify" style="color:#FFFFFF;max-width: 97.5%">Everyone wants a chance. Everyone needs a chance. A chance to get a platform where their voice will rise above the screams 
+                           of the crowd. Where their actions will set the tune for the crowd. Where rage will matter. But very few get to embrace that chance with open 
+                           arms and then go on to be the “shining stars” of their world. Searock brings to you the opportunity to relish that open-armed embrace. With
+                           eliminations in multiple cities around India, and now eliminations in Kathmandu, Nepal. Searock gives you the chance of bringing out your thoughts, your rage, your music and 
+                           placing it before the world to listen. If your music is true, then cash prizes worth 1 Lakh INR, scholarships at the best music academies 
+                           of the nation, music goodies, and a feature in the leading media publications are waiting for you.
+                           <br><br>
+                           If you believe your music is true and have what it takes to go all the way, don’t let go of this chance. Register 
+                           now and come closer to your dream of making the first leap into the ocean of music,
+                           of taking that first step towards success. Let us find you so that the world can get the chance to listen to you. Step out of the crowd. Be a rebel. Be a rocker!
+                           <br><br>
+                           Cheers,<br>
+                           The Searock Team<br>
+                        </p>
+                     </div>
+                  </div>
+               </section>
+               <section class="cd-section cd-section--bg-fixed" id="stats" style="height: 100vh">
+                  <div class="container container--sm headline">
+                     <div class="text-component text--center">
+                        <h2>
+                           <div id="counter">
+							   <div class="counter-value" style="display:inline" data-count="300">0</div>
+                              + Bands<br>
+                              <div class="counter-value" style="display:inline" data-count="15">0</div>
+                              Years of SeaRock<br>
+                              <div class="counter-value" style="display:inline" data-count="12">0</div>
+                              Cities<br>
+                              <div class="counter-value" style="display:inline" data-count="2">0</div>
+                              Countries<br>
+                              <div class="counter-value" style="display:inline" data-count="1">0</div>
+                              Champion Every Year<br>
+                           </div>
+                        </h2>
+                     </div>
+                  </div>
+               </section>
+               <section class="cd-section" id="events">
+                  <div class="container container--md headline">
+                     <div class="text-component" style="text-align:center"><br>
+						 <h2><strong>Events</strong><br><br></h2>
+						 <h1 style="text-align:justify; font-size:5vh;"><strong>India</strong></h1>
+                        <p>
+                        <ul style="list-style: none; font-size:3.5vh;">
+                        <li>Bangalore: TBA</li>
+                        <li>Chandigarh: TBA</li>
+						<li>Dehradun: TBA</li>
+                        <li>Delhi: TBA</li>
+						<li>Goa: TBA</li>
+                        <li>Hyderabad: TBA</li>
+                        <li>Kolkata: TBA</li>
+                        <li>Mumbai: TBA</li>
+                        <li>Pune: TBA</li>
+						</ul>
+                        </p>
+                        <h1 style="text-align:justify; font-size:5vh;"><strong>Nepal</strong></h1>
+					  <p>
+                        <ul style="list-style: none; font-size:3.5vh;">
+                           <li>Kathmandu: TBA</li>
+					    </ul>
+					  </p>
+                     </div>
+                  </div>
+               </section>
+               <section class="cd-section cd-section--bg-fixed" id="reg" style="height: 100vh">
+                  <div class="container container--lg headline" align="center">
+                     <strong>
+						 <h2 id="srwhite">Register for Sea<span id="srred">Rock</span></h2>
+                        <h2 style="color: white"> 
+                           City Eliminations NOW!
+                        </h2>
+                     </strong>
+                     <br><br><br>
+                     <div class="text-component text--center">
+                         <a href="rules.html"><button class="trigger btn btn--primary">Register Here!</button></a>
+                
+                     </div>
+                  </div>
+               </section>
+               <section class="cd-section" id="contact">
+                  <div class="container container--md headline">
+                     <div class="text-component" style="font-size: 150%">
+						 <h1  style="color: #2E2E2E"> Contact Us</h1>
+						 <div class="wrapper">
+  <a href="https://www.facebook.com/searockbits/"><i class="fa fa-facebook-square fa-5x" style="float: right"></i></a>
+							 <p style="display: inline; float: right">&emsp;</p>
+  <a href="https://www.instagram.com/searockbits/"><i class="fa fa-instagram fa-5x" style="float: right"></i></a>
+							
+</div>
+                        <h3 style="font-size: 3.5vh; color: #2E2E2E; float: left">Dhruv Jauhar:<br>+91 90229 82369<br>
+						 <span style="font-style: italic"><strong>searock@bitswaves.org</strong><br><br></span>
+						 Siddhesh Dalvi:<br>+91 89750 89664<br>
+							<span style="font-style: italic"><strong>siddhesh@bitswaves.org</strong><br></span></h3>
+					  </div>
+                  </div>
+               </section>
+               <div class="cd-section cd-section--bg-fixed">
+                  <div class="slideshowContainer">
+					     <div class="container--sm headline">
+                     <div class="text--center">
+                        <h2 style="position: absolute; background: #000000;color: white; opacity: 0.9; bottom: 7.5%; right: 39.5%">Hall of Fame</h2>
+                     </div>
+                  </div>
+					 <div class="imageSlides">
+                     <img src="1.jpg" alt="Corner Cafe Chronicles">
+						  <div class="text-block">
+						  	<p>Corner Cafe Chronicles</p>
+						  </div>
+					 </div>
+					  <div class="imageSlides">
+                     <img src="2.jpg" alt="Five Legged Funk Machine">
+						  <div class="text-block">
+						  	<p>Five Legged Funk Machine</p>
+						  </div>
+					 </div>
+					  <div class="imageSlides">
+                     <img src="3.jpg" alt="Highway 69">
+						  <div class="text-block">
+						  	<p>Highway 69</p>
+						  </div>
+					 </div>
+					  <div class="imageSlides">
+                     <img src="4.jpg" alt="Ryan Viktor Project">
+						  <div class="text-block">
+						  	<p>Ryan Viktor Project</p>
+						  </div>
+					 </div>
+					  <div class="imageSlides">
+                     <img src="5.jpg" alt="Within Ceres">
+						  <div class="text-block">
+						  	<p>Within Ceres</p>
+						  </div>
+					 </div>
+					  <div class="imageSlides">
+                     <img src="6.jpg" alt="Zygnema">
+						  <div class="text-block">
+						  	<p>Zygnema</p>
+						  </div>
+					 </div>
+					  <div class="imageSlides">
+                     <img src="7.jpg" alt="The Family Cheese">
+						  <div class="text-block">
+						  	<p>The Family Cheese</p>
+						  </div>
+					 </div>
+					  <div class="imageSlides">
+                     <img src="8.jpg" alt="The Iyer Project">
+						  <div class="text-block">
+						  	<p>The Iyer Project</p>
+						  </div>
+					 </div>
+					  <div class="imageSlides">
+                     <img src="9.jpg" alt="Knightshades">
+						  <div class="text-block">
+						  	<p>Knightshades</p>
+						  </div>
+					 </div>
+					  
+					  <div class="imageSlides">
+                     <img src="10.jpg" alt="Inner Sanctum">
+						  <div class="text-block">
+						  	<p>Inner Sanctum</p>
+						  </div>
+					 </div>
+                     <span id ="leftArrow" class="slideshowArrow">&triangleleft;</span>
+                     <span id ="rightArrow" class="slideshowArrow">&triangleright;</span>
+                     <div class="slideshowCircles">
+                        <span class="circle dot"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                     </div>
+                  </div>
+               </div>
+               <script src="ext.js"></script>
+            </section>
+         </main>
+      </div>
+   </body>
+</html>
