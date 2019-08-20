@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick.css"/>
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
     <title>SeaRock 2019 | Waves</title>
     <style>
         .fa.fa-instagram {
@@ -178,10 +180,12 @@
         
         tr:nth-child(even) {
             background: rgba(228, 228, 228, 0.20);
+            transition: all 0.5s;
         }
         
         tr:nth-child(odd) {
             background: rgba(228, 228, 228, 0.10);
+            transition: all 0.5s;
         }
         
         tr:hover {
@@ -244,16 +248,16 @@
 		}
 		@-webkit-keyframes shakes {
 			0% { transform: translateX(0); }
-			1% { transform: translateX(-10px); 
-			2% { transform: translateX(0); 
+			1% { transform: translateX(-10px); }
+			2% { transform: translateX(0); }
 			3% { transform: translateX(10px); }
 			4% { transform: translateX(0); }
 			100% { transform: translateX(0); }
 		}
 		@keyframes shakes {
 			0% { transform: translateX(0); }
-			1% { transform: translateX(-10px); 
-			2% { transform: translateX(0); 
+			1% { transform: translateX(-10px); }
+			2% { transform: translateX(0); }
 			3% { transform: translateX(10px); }
 			4% { transform: translateX(0); }
 			100% { transform: translateX(0); }
@@ -347,8 +351,11 @@
                 <div class="container container--lg headline">
                     <div class="text-component" style="text-align:center">
                         <br>
-                        <h2><strong>Events</strong><br><br></h2>
-                        <table class="my_table" style="font-size:3.5vh; width: 90%">
+                        <h2><strong>Events</strong><br></h2>
+						<div class="srhistables">
+						<div>
+						<h2><strong>2019</strong><br></h2>
+                        <table class="my_table" style="font-size:3.5vh; width: 100%">
                             <tr>
                                 <th colspan="3">India</th>
                             </tr>
@@ -384,7 +391,7 @@
                             </tr>
                             <tr>
                                 <td>Mumbai</td>
-                                <td>28<sup>th</sup> July</td>
+                                <td>25<sup>th</sup> August</td>
                                 <td>Glasshouse</td>
                             </tr>
                             <tr>
@@ -401,6 +408,64 @@
                                 <td>Hashtag Lounge</td>
                             </tr>
                         </table>
+						</div>
+						<div>
+						<h2><strong>2020</strong><br></h2>
+                        <table class="my_table" style="font-size:3.5vh; width: 100%">
+                            <tr>
+                                <th colspan="3">India</th>
+                            </tr>
+                            <tr>
+                                <td>Bangalore</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
+                                <td>Chandigarh</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
+                                <td>Delhi</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
+                                <td>Goa</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
+                                <td>Hyderabad</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
+                                <td>Kolkata</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
+                                <td>Mumbai</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
+                                <td>Pune</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
+                                <th colspan="3">Nepal</th>
+                            </tr>
+                            <tr>
+                                <td>Kathmandu</td>
+								<td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                        </table>
+						</div>
+						</div>
                     </div>
                 </div>
             </section>
@@ -528,6 +593,8 @@
             <script src="ext.js"></script>
         </section>
     </main>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.js"></script>
+	<script type="text/javascript" src="slick.min.js"></script>
 </body>
 
 </html>

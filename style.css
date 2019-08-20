@@ -2350,9 +2350,8 @@ u {
 	#srred { color: #cd3333; }
 	h1,h2 {display : inline}
 	h5 {display: inline; width: 100%; padding-bottom : 5px; text-align: right; color: #ffffff; }
-	A:link { COLOR: #ffffff; TEXT-DECORATION: none; font-weight: normal}
-    A:visited { COLOR: #ffffff; TEXT-DECORATION: none; font-weight: normal }
-	A:active { COLOR: #ffffff; TEXT-DECORATION: none }
+	A:link { COLOR: #ffffff; TEXT-DECORATION: none; font-weight: normal; transition: all 0.5s}
+    A:visited { COLOR: #ffffff; TEXT-DECORATION: none; font-weight: normal; transition: all 0.5s }
 	A:hover { COLOR: #D64949; TEXT-DECORATION: none; font-weight: normal; transition: all 0.5s}
 	
 	#translated {
