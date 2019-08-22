@@ -117,14 +117,3 @@ function slideshow() {
 // SHOW FIRST IMAGE, & THEN SET & CALL SLIDE INTERVAL
 setTimeout(slideshow, 1000);
 var imageSlideshowInterval = setInterval(slideshow, 10000);
-
-
-$(document).ready(function(){
-  $('.srhistables').slick({
-    adaptiveHeight: true,
-	//centerMode: true,
-	
-  });
-});
-	
- 

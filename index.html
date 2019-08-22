@@ -8,12 +8,10 @@
     <script>
         document.getElementsByTagName("html")[0].className += " js";
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="./jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="slick.css"/>
-	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
     <title>SeaRock 2019 | Waves</title>
     <style>
         .fa.fa-instagram {
@@ -207,62 +205,6 @@
             opacity: 0.5;
             height: auto;
         }
-        
-        @-webkit-keyframes blinker {
-            from {
-                opacity: 1.0;
-            }
-            to {
-                opacity: 0.0;
-            }
-        }
-        
-        .blink {
-            text-decoration: blink;
-            -webkit-animation-name: blinker;
-            -webkit-animation-duration: 0.6s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: ease-in-out;
-            -webkit-animation-direction: alternate;
-        }
-        
-        @keyframes blinker {
-            from {
-                opacity: 1.0;
-            }
-            to {
-                opacity: 0.0;
-            }
-        }
-        
-        .blink {
-            text-decoration: blink;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-direction: alternate;
-        }
-		.shake {
-			-webkit-animation: shakes 1s infinite  alternate;
-			animation: shakes 1s infinite  alternate;
-		}
-		@-webkit-keyframes shakes {
-			0% { transform: translateX(0); }
-			1% { transform: translateX(-10px); }
-			2% { transform: translateX(0); }
-			3% { transform: translateX(10px); }
-			4% { transform: translateX(0); }
-			100% { transform: translateX(0); }
-		}
-		@keyframes shakes {
-			0% { transform: translateX(0); }
-			1% { transform: translateX(-10px); }
-			2% { transform: translateX(0); }
-			3% { transform: translateX(10px); }
-			4% { transform: translateX(0); }
-			100% { transform: translateX(0); }
-		}
-
     </style>
 </head>
 
@@ -284,7 +226,7 @@
     </header>
     <main>
         <section class="active">
-            <section class="cd-section cd-section--bg-fixed blink" id="fades" style="height: 100vh">
+            <section class="cd-section cd-section--bg-fixed" id="fades" style="height: 100vh">
                 <div class="container container--lg headline">
                     <div class="text-component text--center" id="translated">
                         <br>
@@ -299,9 +241,9 @@
                         <br>
                         <br>
                         <br>
-						<div class=" logo shake">
+						<div class=" logo">
 							<img class="" src="img\logowide.png" alt="Searock Logo Wide" style="z-index: -10;">
-							<img class="bolt blink" src="img\bolt.png" alt="Searock Bolt" style="z-index: 10;">
+							<img class="bolt" src="img\bolt.png" alt="Searock Bolt" style="z-index: 10;">
 						</div>
                     </div>
                     <p style="font-size:225%;text-align:center;color:#ffffff" id="translateu">2<sup style="font-size: 60%">nd</sup> November, 2019</p>
@@ -350,9 +292,7 @@
             <section class="cd-section" id="events">
                 <div class="container container--lg headline">
                     <div class="text-component" style="text-align:center">
-                        <br>
                         <h2><strong>Events</strong><br></h2>
-						<div class="srhistables">
 						<div>
 						<h2><strong>2019</strong><br></h2>
                         <table class="my_table" style="font-size:3.5vh; width: 100%">
@@ -385,6 +325,11 @@
                                 <td>TBA</td>
                             </tr>
                             <tr>
+                                <td>Kochi</td>
+                                <td>TBA</td>
+                                <td>TBA</td>
+                            </tr>
+                            <tr>
                                 <td>Kolkata</td>
                                 <td>24<sup>th</sup> July</td>
                                 <td>Topcat</td>
@@ -408,66 +353,6 @@
                                 <td>Hashtag Lounge</td>
                             </tr>
                         </table>
-						</div>
-						<div>
-						<h2><strong>2020</strong><br></h2>
-                        <table class="my_table" style="font-size:3.5vh; width: 100%">
-                            <tr>
-                                <th colspan="3">India</th>
-                            </tr>
-                            <tr>
-                                <td>Bangalore</td>
-                                <td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                            <tr>
-                                <td>Chandigarh</td>
-                                <td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                            <tr>
-                                <td>Delhi</td>
-                                <td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                            <tr>
-                                <td>Goa</td>
-                                <td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                            <tr>
-                                <td>Hyderabad</td>
-                                <td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                            <tr>
-                                <td>Kolkata</td>
-                                <td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                            <tr>
-                                <td>Mumbai</td>
-                                <td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                            <tr>
-                                <td>Pune</td>
-                                <td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                            <tr>
-                                <th colspan="3">Nepal</th>
-                            </tr>
-                            <tr>
-                                <td>Kathmandu</td>
-								<td>TBA</td>
-                                <td>TBA</td>
-                            </tr>
-                        </table>
-						</div>
-						</div>
-                    </div>
-                </div>
             </section>
             <section class="cd-section cd-section--bg-fixed" id="reg" style="height: 100vh">
                 <div class="container container--lg headline" align="center">
@@ -590,10 +475,8 @@
                     </div>
                 </div>
             </div>
-            <script src="ext.js"></script>
+            <script src="./ext.js"></script>
         </section>
     </main>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.js"></script>
-	<script type="text/javascript" src="slick.min.js"></script>
 </body>
 </html>
